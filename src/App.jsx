@@ -4,24 +4,27 @@ import Features from './components/Features'
 import Process from './components/Process'
 import WhyUs from './components/WhyUs'
 import CTA from './components/CTA'
+import AboutMe from './components/AboutMe'
+import Services from './components/Services'
+import CaseStudies from './components/CaseStudies'
+import ContactStrip from './components/ContactStrip'
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="min-h-screen bg-emerald-50 text-emerald-900">
+    <div className="min-h-screen bg-white text-zinc-900 selection:bg-emerald-200 selection:text-zinc-900">
       <Navbar />
       <main>
         <Hero />
+        <AboutMe />
         <Features />
+        <Services />
         <Process />
+        <CaseStudies />
         <WhyUs />
+        <ContactStrip />
         <CTA />
-        <footer className="py-10 bg-white border-t border-emerald-900/10 text-center">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-sm text-emerald-900/70">
-              © {new Date().getFullYear()} Graf Bernstoff Consulting • Diskrete Strategien für Immobilien & PV
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </main>
     </div>
   )

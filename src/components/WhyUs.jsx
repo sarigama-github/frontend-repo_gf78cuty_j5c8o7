@@ -2,39 +2,30 @@ import { Shield, Gem, Handshake, CheckCircle2 } from "lucide-react";
 
 export default function WhyUs() {
   const points = [
-    { icon: <Shield className="w-5 h-5" />, text: "Konservativer Ansatz mit Fokus auf Kapitalerhalt" },
-    { icon: <Gem className="w-5 h-5" />, text: "Exklusiver Zugang zu Off-Market-Deals" },
-    { icon: <Handshake className="w-5 h-5" />, text: "Langjährige Partnernetzwerke in DACH & EU" },
-    { icon: <CheckCircle2 className="w-5 h-5" />, text: "Transparente Gebühren & erfolgsabhängige Modelle" },
+    { icon: <Shield className="w-4 h-4" />, title: "Kapitalerhalt", text: "Konservativer Ansatz mit klaren Risikogrenzen." },
+    { icon: <Gem className="w-4 h-4" />, title: "Zugang", text: "Off-Market-Deals über gewachsene Netzwerke." },
+    { icon: <Handshake className="w-4 h-4" />, title: "Partnerschaft", text: "Langfristig, transparent, auf Augenhöhe." },
+    { icon: <CheckCircle2 className="w-4 h-4" />, title: "Incentives", text: "Erfolgsabhängige Modelle, klare KPIs." },
   ];
 
   return (
     <section id="warum" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-10 items-center">
-          <div>
-            <h2 className="text-3xl md:text-4xl font-semibold text-emerald-900">Warum Graf Bernstoff Consulting</h2>
-            <p className="mt-3 text-emerald-900/80">
-              Wir verbinden traditionelle Werte mit moderner Strukturierung. Diskretion, Qualität und Verlässlichkeit stehen an erster Stelle.
-            </p>
-            <div className="mt-6 grid gap-3">
-              {points.map((p, idx) => (
-                <div key={idx} className="flex items-center gap-3">
-                  <div className="w-9 h-9 rounded-full bg-emerald-50 text-emerald-900 flex items-center justify-center">
-                    {p.icon}
-                  </div>
-                  <div className="text-emerald-900/90">{p.text}</div>
-                </div>
-              ))}
-            </div>
+        <div className="grid lg:grid-cols-12 gap-10 items-start">
+          <div className="lg:col-span-5">
+            <h2 className="text-3xl md:text-4xl font-semibold text-zinc-900">Warum wir</h2>
+            <p className="mt-3 text-zinc-600">Werteorientiert, präzise, verlässlich. Ohne Spielereien.</p>
           </div>
-          <div className="relative">
-            <div className="aspect-[4/3] rounded-3xl overflow-hidden border border-emerald-900/10">
-              <img className="w-full h-full object-cover" alt="Solar & Immobilien" src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1600&auto=format&fit=crop" />
-            </div>
-            <div className="absolute -bottom-6 -right-6 bg-white/90 backdrop-blur rounded-xl px-4 py-3 shadow-sm border border-emerald-900/10">
-              <div className="text-sm text-emerald-900/80">Erfahrung: 15+ Jahre, 120+ Transaktionen</div>
-            </div>
+          <div className="lg:col-span-7 grid sm:grid-cols-2 gap-3">
+            {points.map((p, idx) => (
+              <div key={idx} className="border border-zinc-200 p-6 rounded-none">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 grid place-items-center bg-emerald-100 text-zinc-900">{p.icon}</div>
+                  <div className="font-medium text-zinc-900">{p.title}</div>
+                </div>
+                <p className="mt-2 text-sm text-zinc-600">{p.text}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

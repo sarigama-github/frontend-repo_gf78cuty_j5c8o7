@@ -3,24 +3,24 @@ import { Building2, Sun, ShieldCheck, LineChart } from "lucide-react";
 export default function Features() {
   const items = [
     {
-      icon: <Building2 className="w-6 h-6" />,
-      title: "Immobilieninvestment",
-      text: "Ankauf, Strukturierung und Management von Wohn- & Gewerbeimmobilien mit Fokus auf stabile Cashflows.",
+      icon: <Building2 className="w-5 h-5" />,
+      title: "Immobilien",
+      text: "Core/Core+ Wohn- & Gewerbeobjekte mit stabilen Cashflows.",
     },
     {
-      icon: <Sun className="w-6 h-6" />,
-      title: "Photovoltaik-Anlagen",
-      text: "Entwicklung, Finanzierung und Betrieb von PV-Portfolios – von Dachanlagen bis Utility Scale.",
+      icon: <Sun className="w-5 h-5" />,
+      title: "Photovoltaik",
+      text: "Dachanlagen bis Utility Scale – Entwicklung, Finanzierung, Betrieb.",
     },
     {
-      icon: <ShieldCheck className="w-6 h-6" />,
+      icon: <ShieldCheck className="w-5 h-5" />,
       title: "Risikomanagement",
-      text: "Sorgfältige Due Diligence, konservative Annahmen und laufendes Monitoring zur Absicherung des Kapitals.",
+      text: "Konservativ modelliert, Due Diligence, permanentes Monitoring.",
     },
     {
-      icon: <LineChart className="w-6 h-6" />,
-      title: "Rendite & Reporting",
-      text: "Transparente Berichte, KPI-Dashboards und erfolgsabhängige Modelle für maximale Interessengleichheit.",
+      icon: <LineChart className="w-5 h-5" />,
+      title: "Reporting",
+      text: "Transparente KPIs, quartalsweise Berichte, klare Entscheidungen.",
     },
   ];
 
@@ -28,20 +28,20 @@ export default function Features() {
     <section id="leistungen" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
-          <h2 className="text-3xl md:text-4xl font-semibold text-emerald-900">Leistungen im Überblick</h2>
-          <p className="mt-3 text-emerald-900/80">
-            Wir begleiten Sie ganzheitlich – von der Strategie bis zur Umsetzung. Diskret, effizient und ergebnisorientiert.
+          <h2 className="text-3xl md:text-4xl font-semibold text-zinc-900">Leistungen</h2>
+          <p className="mt-3 text-zinc-600">
+            Klar strukturiert. Ohne Schnörkel. Für messbare Ergebnisse.
           </p>
         </div>
 
-        <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
           {items.map((i) => (
-            <div key={i.title} className="rounded-2xl border border-emerald-900/10 p-6 hover:shadow-sm hover:border-emerald-900/20 transition">
-              <div className="w-10 h-10 rounded-full bg-emerald-50 text-emerald-900 flex items-center justify-center">
+            <div key={i.title} className="border border-zinc-200 p-6 hover:bg-zinc-50 transition rounded-none">
+              <div className="w-9 h-9 grid place-items-center bg-emerald-100 text-zinc-900">
                 {i.icon}
               </div>
-              <h3 className="mt-4 font-semibold text-emerald-900">{i.title}</h3>
-              <p className="mt-2 text-sm text-emerald-900/80">{i.text}</p>
+              <h3 className="mt-4 font-medium text-zinc-900 tracking-tight">{i.title}</h3>
+              <p className="mt-2 text-sm text-zinc-600 leading-relaxed">{i.text}</p>
             </div>
           ))}
         </div>
