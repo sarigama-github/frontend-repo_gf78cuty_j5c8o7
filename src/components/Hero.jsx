@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="grid md:grid-cols-12 gap-10 items-center">
           <div className="md:col-span-7">
             <div className="inline-flex items-center gap-2 border border-zinc-200 px-3 py-1 text-[12px] text-zinc-600 uppercase tracking-[0.25em]">
-              Diskrete Anlagenstrategien
+              Graf Bernstorff Consulting
             </div>
             <h1 className="mt-6 text-4xl md:text-6xl font-semibold leading-[1.05] text-zinc-900 tracking-tight">
               Immobilien & Photovoltaik, kompromisslos professionell.
@@ -19,7 +19,7 @@ export default function Hero() {
               <a href="#kontakt" className="inline-flex justify-center rounded-none bg-zinc-900 px-6 py-3 text-white font-medium hover:opacity-90 transition">
                 Erstgespräch sichern
               </a>
-              <a href="#leistungen" className="inline-flex justify-center rounded-none border border-zinc-900 px-6 py-3 text-zinc-900 font-medium hover:bg-zinc-900 hover:text-white transition">
+              <a href="/services" className="inline-flex justify-center rounded-none border border-zinc-900 px-6 py-3 text-zinc-900 font-medium hover:bg-zinc-900 hover:text-white transition">
                 Leistungen
               </a>
             </div>
